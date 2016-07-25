@@ -1,13 +1,13 @@
-# Create React App
+# Create React Redux App
 
-Create React apps with no build configuration.
+Create React Redux apps with no build configuration.
 
 ## tl;dr
 
 ```sh
-npm install -g create-react-app
+npm install -g create-redux-app
 
-create-react-app my-app
+create-redux-app my-app
 cd my-app/
 npm start
 
@@ -25,7 +25,7 @@ When you’re ready to deploy to production, create a minified bundle with `npm 
 Install it once globally:
 
 ```sh
-npm install -g create-react-app
+npm install -g create-redux-app
 ```
 
 **You’ll need to have Node >= 4 on your machine**. We recommend to use Node >= 6 and npm >= 3 for faster installation speed and better disk usage. You can use [nvm](https://github.com/creationix/nvm#usage) to easily switch Node versions between different projects.
@@ -37,7 +37,7 @@ npm install -g create-react-app
 To create a new app, run:
 
 ```sh
-create-react-app my-app
+create-redux-app my-app
 cd my-app
 ```
 
@@ -75,7 +75,7 @@ You will see the build errors and lint warnings in the console.
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It correctly bundles React Redux in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
@@ -83,7 +83,7 @@ Your app is ready to be deployed!
 ## How Do I…?
 
 The generated project will include a guide in its README.<br>
-You can also read its latest version [here](https://github.com/facebookincubator/create-react-app/blob/master/template/README.md).
+You can also read its latest version [here](https://github.com/facebookincubator/create-redux-app/blob/master/template/README.md).
 
 ## Philosophy
 
@@ -95,9 +95,9 @@ You can also read its latest version [here](https://github.com/facebookincubator
 
 ## Why Use This?
 
-**If you’re getting started** with React, use `create-react-app` to automate the build of your app. There is no configuration file, and `react-scripts` is the only extra build dependency in your `package.json`. Your environment will have everything you need to build a modern React app:
+**If you’re getting started** with React Redux, use `create-redux-app` to automate the build of your app. There is no configuration file, and `react-scripts` is the only extra build dependency in your `package.json`. Your environment will have everything you need to build a modern React Redux app:
 
-* React, JSX, and ES6 support.
+* React Redux, JSX, and ES6 support.
 * Language extras beyond ES6 like the object spread operator.
 * A dev server that lints for common errors.
 * Import CSS and image files directly from JavaScript.
@@ -106,7 +106,7 @@ You can also read its latest version [here](https://github.com/facebookincubator
 
 **The feature set is intentionally limited**. It doesn’t support advanced features such as server rendering or CSS modules. Currently, it doesn’t support testing either. The tool is also **non-configurable** because it is hard to provide a cohesive experience and easy updates across a set of tools when the user can tweak anything.
 
-**You don’t have to use this.** Historically it has been easy to [gradually adopt](https://www.youtube.com/watch?v=BF58ZJ1ZQxY) React. However many people create new single-page React apps from scratch every day. We’ve heard [loud](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4) and [clear](https://twitter.com/thomasfuchs/status/708675139253174273) that this process can be error-prone and tedious, especially if this is your first JavaScript build stack. This project is an attempt to figure out a good way to start developing React apps.
+**You don’t have to use this.** Historically it has been easy to [gradually adopt](https://www.youtube.com/watch?v=BF58ZJ1ZQxY) React Redux. However many people create new single-page React Redux apps from scratch every day. We’ve heard [loud](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4) and [clear](https://twitter.com/thomasfuchs/status/708675139253174273) that this process can be error-prone and tedious, especially if this is your first JavaScript build stack. This project is an attempt to figure out a good way to start developing React Redux apps.
 
 ### Converting to a Custom Setup
 
@@ -129,11 +129,11 @@ Some features are currently **not supported**:
 * LESS or Sass.
 * Hot reloading of components.
 
-Some of them might get added in the future if they are stable, are useful to majority of React apps, don’t conflict with existing tools, and don’t introduce additional configuration.
+Some of them might get added in the future if they are stable, are useful to majority of React Redux apps, don’t conflict with existing tools, and don’t introduce additional configuration.
 
 ## What’s Inside?
 
-The tools used by Create React App are subject to change.
+The tools used by Create React Redux App are subject to change.
 Currently it is a thin layer on top of many amazing community projects, such as:
 
 * [webpack](https://webpack.github.io/) with [webpack-dev-server](https://github.com/webpack/webpack-dev-server), [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) and [style-loader](https://github.com/webpack/style-loader)
@@ -146,7 +146,7 @@ All of them are transient dependencies of the provided npm package.
 
 ## Contributing
 
-We'd love to have your helping hand on `create-react-app`! See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
+We'd love to have your helping hand on `create-redux-app`! See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
 ## Acknowledgements
 
@@ -171,4 +171,4 @@ If you don’t agree with the choices made in this project, you might want to ex
 * [roc](https://github.com/rocjs/roc)
 
 You can also use module bundlers like [webpack](http://webpack.github.io) and [Browserify](http://browserify.org/) directly.<br>
-React documentation includes [a walkthrough](https://facebook.github.io/react/docs/package-management.html) on this topic.
+React Redux documentation includes [a walkthrough](https://facebook.github.io/react/docs/package-management.html) on this topic.
