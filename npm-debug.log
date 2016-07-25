@@ -1,0 +1,137 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/przeor/.nvm/versions/node/v4.0.0/bin/node',
+1 verbose cli   '/Users/przeor/.nvm/versions/node/v4.0.0/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   './' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose publish [ './' ]
+5 silly cache add args [ './', null ]
+6 verbose cache add spec ./
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: './',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: './',
+7 silly cache add   spec: '/Users/przeor/Desktop/create-redux-app',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/przeor/.npm/react-scripts/0.1.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/przeor/.npm/react-scripts/0.1.0/package.tgz',
+9 verbose tar pack   '/Users/przeor/Desktop/create-redux-app' ]
+10 verbose tarball /Users/przeor/.npm/react-scripts/0.1.0/package.tgz
+11 verbose folder /Users/przeor/Desktop/create-redux-app
+12 info prepublish react-scripts@0.1.0
+13 verbose addLocalTarball adding from inside cache /Users/przeor/.npm/react-scripts/0.1.0/package.tgz
+14 silly cache afterAdd react-scripts@0.1.0
+15 verbose afterAdd /Users/przeor/.npm/react-scripts/0.1.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/przeor/.npm/react-scripts/0.1.0/package/package.json written
+17 silly publish { name: 'react-scripts',
+17 silly publish   version: '0.1.0',
+17 silly publish   description: 'Configuration and scripts for Create React App.',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/reactconvention/create-redux-app.git' },
+17 silly publish   license: 'BSD-3-Clause',
+17 silly publish   engines: { node: '>=4' },
+17 silly publish   bugs: { url: 'https://github.com/ReactConvention/create-redux-app/issues' },
+17 silly publish   scripts:
+17 silly publish    { start: 'node scripts/start.js --debug-template',
+17 silly publish      build: 'node scripts/build.js --debug-template',
+17 silly publish      'create-react-app': 'node global-cli/index.js --scripts-version "$PWD/`npm pack`"' },
+17 silly publish   files: [ 'LICENSE', 'PATENTS', 'bin', 'config', 'scripts', 'template' ],
+17 silly publish   bin: { 'react-scripts': './bin/react-scripts.js' },
+17 silly publish   dependencies:
+17 silly publish    { autoprefixer: '6.3.7',
+17 silly publish      'babel-core': '6.10.4',
+17 silly publish      'babel-eslint': '6.1.2',
+17 silly publish      'babel-loader': '6.2.4',
+17 silly publish      'babel-plugin-syntax-trailing-function-commas': '6.8.0',
+17 silly publish      'babel-plugin-transform-class-properties': '6.10.2',
+17 silly publish      'babel-plugin-transform-object-rest-spread': '6.8.0',
+17 silly publish      'babel-plugin-transform-react-constant-elements': '6.9.1',
+17 silly publish      'babel-preset-es2015': '6.9.0',
+17 silly publish      'babel-preset-es2016': '6.11.3',
+17 silly publish      'babel-preset-react': '6.11.1',
+17 silly publish      chalk: '1.1.3',
+17 silly publish      'cross-spawn': '4.0.0',
+17 silly publish      'css-loader': '0.23.1',
+17 silly publish      eslint: '3.1.1',
+17 silly publish      'eslint-loader': '1.4.1',
+17 silly publish      'eslint-plugin-import': '1.10.3',
+17 silly publish      'eslint-plugin-react': '5.2.2',
+17 silly publish      'extract-text-webpack-plugin': '1.0.1',
+17 silly publish      'file-loader': '0.9.0',
+17 silly publish      'fs-extra': '^0.30.0',
+17 silly publish      'html-webpack-plugin': '2.22.0',
+17 silly publish      'json-loader': '0.5.4',
+17 silly publish      opn: '4.0.2',
+17 silly publish      'postcss-loader': '0.9.1',
+17 silly publish      rimraf: '2.5.3',
+17 silly publish      'style-loader': '0.13.1',
+17 silly publish      'url-loader': '0.5.7',
+17 silly publish      webpack: '1.13.1',
+17 silly publish      'webpack-dev-server': '1.14.1',
+17 silly publish      fsevents: '1.0.14' },
+17 silly publish   devDependencies:
+17 silly publish    { 'bundle-deps': '^1.0.0',
+17 silly publish      react: '^15.2.1',
+17 silly publish      'react-dom': '^15.2.1' },
+17 silly publish   optionalDependencies: { fsevents: '1.0.14' },
+17 silly publish   readme: '# Create React App\n\nCreate React apps with no build configuration.\n\n## tl;dr\n\n```sh\nnpm install -g create-react-app\n\ncreate-react-app my-app\ncd my-app/\nnpm start\n\n```\n\nThen open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>\nWhen you’re ready to deploy to production, create a minified bundle with `npm run build`.\n\n<img src=\'https://camo.githubusercontent.com/506a5a0a33aebed2bf0d24d3999af7f582b31808/687474703a2f2f692e696d6775722e636f6d2f616d794e66434e2e706e67\' width=\'600\' alt=\'npm start\'>\n\n## Getting Started\n\n### Installation\n\nInstall it once globally:\n\n```sh\nnpm install -g create-react-app\n```\n\n**You’ll need to have Node >= 4 on your machine**. We recommend to use Node >= 6 and npm >= 3 for faster installation speed and better disk usage. You can use [nvm](https://github.com/creationix/nvm#usage) to easily switch Node versions between different projects.\n\n**This tool doesn’t assume a Node backend**. The Node installation is only required for the build tools that rely on it locally, such as Webpack and Babel.\n\n### Creating an App\n\nTo create a new app, run:\n\n```sh\ncreate-react-app my-app\ncd my-app\n```\n\nIt will create a directory called `my-app` inside the current folder.<br>\nInside that directory, it will generate the initial project structure and install the transient dependencies:\n\n```\nmy-app/\n  README.md\n  index.html\n  favicon.ico\n  node_modules/\n  package.json\n  src/\n    App.css\n    App.js\n    index.css\n    index.js\n    logo.svg\n```\n\nNo configuration or complicated folder structures, just the files you need to build your app.<br>\nOnce the installation is done, you can run some commands inside the project folder:\n\n### `npm start`\n\nRuns the app in development mode.<br>\nOpen [http://localhost:3000](http://localhost:3000) to view it in the browser.\n\nThe page will reload if you make edits.<br>\nYou will see the build errors and lint warnings in the console.\n\n<img src=\'https://camo.githubusercontent.com/41678b3254cf583d3186c365528553c7ada53c6e/687474703a2f2f692e696d6775722e636f6d2f466e4c566677362e706e67\' width=\'600\' alt=\'Build errors\'>\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.<br>\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.<br>\nYour app is ready to be deployed!\n\n## How Do I…?\n\nThe generated project will include a guide in its README.<br>\nYou can also read its latest version [here](https://github.com/facebookincubator/create-react-app/blob/master/template/README.md).\n\n## Philosophy\n\n* **One Dependency:** There is just one build dependency. It uses Webpack, Babel, ESLint, and other amazing projects, but provides a cohesive curated experience on top of them.\n\n* **Zero Configuration:** There are no configuration files or command line options. Configuring both development and production builds is handled for you so you can focus on writing code.\n\n* **No Lock-In:** You can “eject” to a custom setup at any time. Run a single command, and all the configuration and build dependencies will be moved directly into your project, so you can pick up right where you left off.\n\n## Why Use This?\n\n**If you’re getting started** with React, use `create-react-app` to automate the build of your app. There is no configuration file, and `react-scripts` is the only extra build dependency in your `package.json`. Your environment will have everything you need to build a modern React app:\n\n* React, JSX, and ES6 support.\n* Language extras beyond ES6 like the object spread operator.\n* A dev server that lints for common errors.\n* Import CSS and image files directly from JavaScript.\n* Autoprefixed CSS, so you don’t need `-webkit` or other prefixes.\n* A `build` script to bundle JS, CSS, and images for production, with sourcemaps.\n\n**The feature set is intentionally limited**. It doesn’t support advanced features such as server rendering or CSS modules. Currently, it doesn’t support testing either. The tool is also **non-configurable** because it is hard to provide a cohesive experience and easy updates across a set of tools when the user can tweak anything.\n\n**You don’t have to use this.** Historically it has been easy to [gradually adopt](https://www.youtube.com/watch?v=BF58ZJ1ZQxY) React. However many people create new single-page React apps from scratch every day. We’ve heard [loud](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4) and [clear](https://twitter.com/thomasfuchs/status/708675139253174273) that this process can be error-prone and tedious, especially if this is your first JavaScript build stack. This project is an attempt to figure out a good way to start developing React apps.\n\n### Converting to a Custom Setup\n\n**If you’re a power user** and you aren’t happy with the default configuration, you can “eject” from the tool and use it as a boilerplate generator.\n\nRunning `npm run eject` copies all the configuration files and the transient dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. Commands like `npm start` and `npm run build` will still work, but they will point to the copied scripts so you can tweak them. At this point, you’re on your own.\n\n**Note: this is a one-way operation. Once you `eject`, you can’t go back!**\n\nYou don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.\n\n## Limitations\n\nSome features are currently **not supported**:\n\n* Server rendering.\n* Testing.\n* Some experimental syntax extensions (e.g. decorators).\n* CSS Modules.\n* LESS or Sass.\n* Hot reloading of components.\n\nSome of them might get added in the future if they are stable, are useful to majority of React apps, don’t conflict with existing tools, and don’t introduce additional configuration.\n\n## What’s Inside?\n\nThe tools used by Create React App are subject to change.\nCurrently it is a thin layer on top of many amazing community projects, such as:\n\n* [webpack](https://webpack.github.io/) with [webpack-dev-server](https://github.com/webpack/webpack-dev-server), [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) and [style-loader](https://github.com/webpack/style-loader)\n* [Babel](http://babeljs.io/) with ES6 and extensions used by Facebook (JSX, [object spread](https://github.com/sebmarkbage/ecmascript-rest-spread/commits/master), [class properties](https://github.com/jeffmo/es-class-public-fields))\n* [Autoprefixer](https://github.com/postcss/autoprefixer)\n* [ESLint](http://eslint.org/)\n* and more.\n\nAll of them are transient dependencies of the provided npm package.\n\n## Contributing\n\nWe\'d love to have your helping hand on `create-react-app`! See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we\'re looking for and how to get started.\n\n## Acknowledgements\n\nWe are grateful to the authors of existing related projects for their ideas and collaboration:\n\n* [@eanplatter](https://github.com/eanplatter)\n* [@insin](https://github.com/insin)\n* [@mxstbr](https://github.com/mxstbr)\n\n## Alternatives\n\nIf you don’t agree with the choices made in this project, you might want to explore alternatives with different tradeoffs:\n\n* [enclave](https://github.com/eanplatter/enclave)\n* [nwb](https://github.com/insin/nwb)\n* [motion](https://github.com/motion/motion)\n* [rackt-cli](https://github.com/mzabriskie/rackt-cli)\n* [budō](https://github.com/mattdesl/budo)\n* [rwb](https://github.com/petehunt/rwb)\n* [quik](https://github.com/satya164/quik)\n* [sagui](https://github.com/saguijs/sagui)\n* [roc](https://github.com/rocjs/roc)\n\nYou can also use module bundlers like [webpack](http://webpack.github.io) and [Browserify](http://browserify.org/) directly.<br>\nReact documentation includes [a walkthrough](https://facebook.github.io/react/docs/package-management.html) on this topic.\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '8f25eefc3fb6a75bcd7f6e3b434d895fa2d815ad',
+17 silly publish   homepage: 'https://github.com/reactconvention/create-redux-app#readme',
+17 silly publish   _id: 'react-scripts@0.1.0',
+17 silly publish   _shasum: '017a5ea7f0c43302643fd1ea4c007169812c467c',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name react-scripts
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/react-scripts
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/przeor/.npm/react-scripts/0.1.0/package.tgz
+25 verbose request uri https://registry.npmjs.org/react-scripts
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 11:35:22 AM
+28 verbose request using bearer token for auth
+29 verbose request id 76001ae1eebeae10
+30 http request PUT https://registry.npmjs.org/react-scripts
+31 http 403 https://registry.npmjs.org/react-scripts
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'content-length': '107',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Mon, 25 Jul 2016 09:35:24 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-lhr6329-LHR',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1469439323.559642,VS0,VE702',
+32 verbose headers   vary: 'Accept-Encoding' }
+33 verbose request invalidating /Users/przeor/.npm/registry.npmjs.org/react-scripts on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: you do not have permission to publish "react-scripts". Are you logged in as the correct user? : react-scripts
+35 verbose stack     at makeError (/Users/przeor/.nvm/versions/node/v4.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:263:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (/Users/przeor/.nvm/versions/node/v4.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:251:14)
+35 verbose stack     at Request._callback (/Users/przeor/.nvm/versions/node/v4.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:171:14)
+35 verbose stack     at Request.self.callback (/Users/przeor/.nvm/versions/node/v4.0.0/lib/node_modules/npm/node_modules/request/request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/Users/przeor/.nvm/versions/node/v4.0.0/lib/node_modules/npm/node_modules/request/request.js:1073:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/Users/przeor/.nvm/versions/node/v4.0.0/lib/node_modules/npm/node_modules/request/request.js:1019:12)
+36 verbose statusCode 403
+37 verbose pkgid react-scripts
+38 verbose cwd /Users/przeor/Desktop/create-redux-app
+39 error Darwin 14.5.0
+40 error argv "/Users/przeor/.nvm/versions/node/v4.0.0/bin/node" "/Users/przeor/.nvm/versions/node/v4.0.0/bin/npm" "publish" "./"
+41 error node v4.0.0
+42 error npm  v2.14.2
+43 error code E403
+44 error you do not have permission to publish "react-scripts". Are you logged in as the correct user? : react-scripts
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
