@@ -2,13 +2,13 @@
   "name": "react-scripts",
   "version": "0.1.0",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
+  "repository": "ReactConvention/create-redux-app",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
   },
   "bugs": {
-    "url": "https://github.com/facebookincubator/create-react-app/issues"
+    "url": "https://github.com/ReactConvention/create-redux-app/issues"
   },
   "scripts": {
     "start": "node scripts/start.js --debug-template",
